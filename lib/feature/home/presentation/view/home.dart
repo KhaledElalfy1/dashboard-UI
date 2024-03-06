@@ -16,8 +16,8 @@ class HomeScreen extends StatelessWidget {
               flex: 2,
               child: SizedBox(
                 child: SideMenuWidget(),
-              )),
-          Expanded(
+              ),),
+         const Expanded(
             flex: 7,
             child: Dashboard()
           ),

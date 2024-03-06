@@ -1,4 +1,4 @@
-import 'package:dashboard/feature/home/presentation/view/widgets/dashboard_header.dart';
+import 'package:dashboard/feature/home/presentation/view/widgets/dashboard_search_bar.dart';
 import 'package:flutter/material.dart';
 
 class Dashboard extends StatelessWidget {
@@ -11,11 +11,10 @@ class Dashboard extends StatelessWidget {
         SizedBox(
           height: 20,
         ),
-        DashboardHeader(),
+        DashboardSearchBar(),
         SizedBox(
           height: 20,
         ),
-        
       ],
     );
   }
