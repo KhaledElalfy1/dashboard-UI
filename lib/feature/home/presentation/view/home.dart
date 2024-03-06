@@ -1,3 +1,4 @@
+import 'package:dashboard/feature/home/presentation/view/widgets/dashboard_section.dart';
 import 'package:dashboard/feature/home/presentation/view/widgets/side_menu_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -18,9 +19,7 @@ class HomeScreen extends StatelessWidget {
               )),
           Expanded(
             flex: 7,
-            child: Container(
-              color: Colors.blue,
-            ),
+            child: Dashboard()
           ),
           Expanded(
             flex: 3,
