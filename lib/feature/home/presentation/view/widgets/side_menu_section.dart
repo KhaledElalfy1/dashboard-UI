@@ -1,10 +1,10 @@
 import 'package:dashboard/feature/home/data/side_menu_data.dart';
 import 'package:dashboard/feature/home/presentation/controller/cubit/home_cubit.dart';
-import 'package:dashboard/feature/home/presentation/view/widgets/side_menu_widget_item.dart';
+import 'package:dashboard/feature/home/presentation/view/widgets/side_menu_item.dart';
 import 'package:flutter/material.dart';
 
-class SideMenuWidget extends StatelessWidget {
-  const SideMenuWidget({super.key});
+class SideMenuSection extends StatelessWidget {
+  const SideMenuSection({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +14,7 @@ class SideMenuWidget extends StatelessWidget {
         itemCount: SideMenuData.menu.length,
         itemBuilder: (context, index) {
           return SideMenuItem(
-            icon:HomeCubit.get(context).menu[index].icon ,
+            icon: HomeCubit.get(context).menu[index].icon,
             title: HomeCubit.get(context).menu[index].title,
             index: index,
           );
